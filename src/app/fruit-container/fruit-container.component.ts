@@ -6,6 +6,10 @@ import {fruitdata} from '../../app/Models/fruitlist'
   styleUrls: ['./fruit-container.component.css']
 })
 export class FruitContainerComponent {
-  data= fruitdata
+  data= fruitdata;
 
+  datafromchild(searchdata:any){
+
+    this.data=fruitdata.filter(x=>x.name==searchdata.name)
+  }
 }

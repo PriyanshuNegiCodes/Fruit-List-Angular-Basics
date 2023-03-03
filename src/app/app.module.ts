@@ -9,7 +9,7 @@ import { FruitlistComponent } from './fruitlist/fruitlist.component';
 import { SearchComponent } from './search/search.component';
 import { FruitCardComponent } from './fruit-card/fruit-card.component';
 import { AddCardComponent } from './add-card/add-card.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { AddCardComponent } from './add-card/add-card.component';
     AddCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

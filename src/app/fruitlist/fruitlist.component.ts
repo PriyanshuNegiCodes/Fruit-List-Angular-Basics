@@ -14,5 +14,4 @@ singledata:any
 senddata(datafromhtml:any){
   this.singledata=datafromhtml;
 }
-
 }
