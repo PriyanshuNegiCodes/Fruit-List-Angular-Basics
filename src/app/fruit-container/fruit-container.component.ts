@@ -10,6 +10,7 @@ export class FruitContainerComponent {
 
   datafromchild(searchdata:any){
 
-    this.data=fruitdata.filter(x=>x.name==searchdata.name)
+    this.data=fruitdata.filter(x=>x.name==searchdata)
+    alert(this.data);
   }
 }
