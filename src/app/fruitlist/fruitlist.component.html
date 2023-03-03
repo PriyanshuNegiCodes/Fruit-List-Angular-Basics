@@ -1,0 +1,13 @@
+<app-fruit-card></app-fruit-card>
+<div class="card" *ngFor="let temp of recievedata" (mouseover)="senddata(temp)">
+<img src="{{temp.imageurl}}" alt="" >
+<p>{{temp.name}}</p>
+<p>{{temp.price}} $ {{temp.unit}}</p>
+</div>
+
+<div id="specialdata">
+    <img src="{{singledata.imageurl}}" alt="" >
+    <h3>{{singledata.name}}</h3>
+    <h2>Price of fruit: {{singledata.price}} </h2>
+    <h2>Unit: {{singledata.unit}}</h2>
+</div>

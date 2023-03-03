@@ -1,0 +1,20 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+p{
+    font-size: large;
+    color:blue
+}
+div{
+   
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+#specialdata img{
+    width: 200px;
+    height: 200px;
+}
