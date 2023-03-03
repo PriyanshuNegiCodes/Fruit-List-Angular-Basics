@@ -15,5 +15,4 @@ export class SearchComponent {
     this.eventobj.emit(this.searchFruits);
 
   }
-
 }

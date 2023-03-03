@@ -1,11 +1,25 @@
 
 
-<div class="card" *ngFor="let temp of recievedata" (mouseover)="senddata(temp)">
-<img src="{{temp.imageurl}}" alt="" >
-<p>{{temp.name}}</p>
-<p>{{temp.price}} $ {{temp.unit}}</p>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-8 ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card col col-sm-3 cardData" *ngFor="let temp of recievedata" (mouseover)="senddata(temp)">
+                            <img class="img-fluid" src="{{temp.imageurl}}" alt="" >
+                            <p>{{temp.name}}</p>
+                            <p>{{temp.price}} $ {{temp.unit}}</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                    <app-fruit-card [recievedDataFromFruitList]="singledata"></app-fruit-card>
+            </div>
+        </div>
+        
+    </div>
 </div>
-<app-fruit-card [recievedDataFromFruitList]="singledata"></app-fruit-card>
-
 
 

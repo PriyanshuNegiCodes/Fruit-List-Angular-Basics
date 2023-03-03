@@ -9,8 +9,16 @@ export class FruitContainerComponent {
   data= fruitdata;
 
   datafromchild(searchdata:any){
-
-    this.data=fruitdata.filter(x=>x.name==searchdata)
+    if(searchdata==""){
+      this.data=fruitdata;
+    }else{
+      this.data=fruitdata.filter(x=>x.name==searchdata)
     alert(this.data);
+    }
+    
+  }
+
+  fruitdatafromUser(addCardData:any){
+    this.data.push(addCardData);
   }
 }

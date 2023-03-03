@@ -1,1 +1,6 @@
-<p>add-card works!</p>
+<input type="text" placeholder="id" [(ngModel)]="fruitdatafromUser.id">
+<input type="text" placeholder="name" [(ngModel)]="fruitdatafromUser.name">
+<input type="text" placeholder="price"[(ngModel)]="fruitdatafromUser.price">
+<input type="text" placeholder="unit"[(ngModel)]="fruitdatafromUser.unit">
+<input type="text" placeholder="imageUrl"[(ngModel)]="fruitdatafromUser.imageurl">
+<button type="button" class="btn btn-success" (click)="addCard()">Add Fruit</button>

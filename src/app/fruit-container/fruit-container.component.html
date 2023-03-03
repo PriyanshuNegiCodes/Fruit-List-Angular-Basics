@@ -1,3 +1,19 @@
-<app-add-card></app-add-card>
-<app-search (eventobj)="datafromchild($event)"></app-search>
-<app-fruitlist [recievedata]="data"></app-fruitlist>
+<div class="container-fluid" style="margin-top: 20px;">
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-8">
+            <app-add-card (eventemitter)="fruitdatafromUser($event)"></app-add-card>
+        </div>
+        <div class="col col-sm-4">
+            <app-search (eventobj)="datafromchild($event)"></app-search>
+        </div>
+    </div>
+</div>
+</div>
+<div style="margin-top: 40px; ">
+    <app-fruitlist [recievedata]="data"></app-fruitlist>
+</div>
+
+
+
+
